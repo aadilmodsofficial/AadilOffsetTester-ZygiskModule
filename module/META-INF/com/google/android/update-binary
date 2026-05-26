@@ -1,0 +1,30 @@
+#!/sbin/sh
+
+SKIPUNZIP=1
+OUTFD=$2
+ZIPFILE=$3
+
+ui_print() { echo -e "ui_print $1\nui_print" >> /proc/self/fd/$OUTFD; }
+
+. /data/adb/magisk/util_functions.sh
+setup_flashable
+
+MODPATH=/data/adb/modules_update/AadilOffsetTester
+
+ui_print "********************************"
+ui_print "      Aadil Offset Tester"
+ui_print "********************************"
+ui_print "- Preparing installation..."
+
+mkdir -p "$MODPATH"
+unzip -o "$ZIPFILE" -x 'META-INF/*' -d "$MODPATH" >&2
+
+ui_print "- Creating module directories..."
+mkdir -p "$MODPATH/opt"
+chmod -R 777 "$MODPATH/opt"
+
+ui_print "- Setting permissions..."
+set_perm_recursive "$MODPATH" root root 0755 0644
+
+ui_print "- Installation completed"
+ui_print "********************************"

@@ -1,0 +1,8 @@
+id=AadilOffsetTester
+name=Aadil Offset Tester
+version=v9.5
+versionCode=95
+author=Aadil
+description=Advanced Offset Tester by Aadil Mods
+minMagisk=24000
+updateJson=https://raw.githubusercontent.com/aadilmodsofficial/AadilOffsetTester-ZygiskModule/main/main/update.json
