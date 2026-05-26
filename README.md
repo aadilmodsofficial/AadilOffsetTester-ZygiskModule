@@ -23,10 +23,10 @@ Offset Tester supports both **ARM32 (ARMv7)** and **ARM64 (ARMv8)** architecture
 | Feature | Description |
 |---|---|
 | **Function Hooking** | Supports runtime function hooking |
-| **Wide Data Type Support** | Supports multiple data types: bool, int, float, string, vector2, vector3, quaternion/color, char, int8, byte, uint, short, long, double, C++ string and const char, UE4 string, array, list, and void |
+| **Wide Data Type Support** | Supports multiple data types: bool, int, float, string, vector2, vector3, quaternion/color, char, int8, byte, uint, short, long, double, C++ string/const char, Unity/UE4 string, array, list, and void |
 | **Hex / Memory Patching** | Patch raw hex or memory values directly while the game is running |
 | **Memory Tracer** | Trace any memory address in real time inside a running game |
-| **Pointer Scanner** | Scan for pointer chains to find stable, version-independent addresses |
+| **Pointer Scanner** | Scan for pointer chains to find stable pointer path |
 | **Stack Trace** | View the call stack to understand how a function is being executed |
 | **Runtime Dumper** | Dumps only actively used offsets for faster and cleaner results compared to full dumps |
 | **Global/Unity Dumper** | Dumps Unity or non-Unity game libraries for analysis |
@@ -36,7 +36,7 @@ Offset Tester supports both **ARM32 (ARMv7)** and **ARM64 (ARMv8)** architecture
 
 ## How This Module Works
 
-This Zygisk module uses the **Zygisk API** (part of Magisk) to inject the Offset Tester library into a target game process at launch. Instead of manually patching the game APK, the module handles injection automatically in the background.
+This Zygisk module uses the **Zygisk API** (part of Magisk) to inject the Offset Tester into a target game process at launch. Instead of manually patching the game APK, the module handles injection automatically in the background.
 
 You simply tell the module which games to inject into by listing their package names in a config file, and Offset Tester appears as a floating every time you open one of those games.
 
