@@ -9,8 +9,8 @@
 **Offset Tester** is an advanced Android game analysis tool developed by [Aadil Mods](https://www.youtube.com/@AadilMods). It shows a floating menu inside the game/app and gives you powerful real-time features such as memory inspection, offset testing, hooking, and patching. It also includes tools for library dumping, memory tracing, stack tracing, and pointer scanning.
 
 It is mainly used for:
-- Offset and memory patching, and function hooking
-- Displaying function returns and memory values in different data types 
+- Offset/Memory patching, and Function hooking
+- Displaying memory values and function returns in different data types 
 - Memory tracing, stack tracing, and pointer scanning
 - Library dumping, including global, Il2Cpp, and runtime dumps
 
