@@ -1,6 +1,7 @@
-# Offset Tester v9.5
+# Offset Tester v9.6
 
 ## What's New
-- Added Root Mode
+- Fixed menu not showing
+- Added support for x86 and x86_64
 - Bug fixes
 - Improvements and optimizations
