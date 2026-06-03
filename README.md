@@ -14,7 +14,7 @@ It is mainly used for:
 - Memory tracing, stack tracing, and pointer scanning
 - Library dumping, including global, Il2Cpp, and runtime dumps
 
-Offset Tester supports both **ARM32 (ARMv7)** and **ARM64 (ARMv8)** architectures and works with Unreal, Unity and non-Unity games.
+Offset Tester supports **ARM32 (ARMv7), ARM64 (ARMv8), x86 & x86_64** architectures and works with Unreal, Unity and non-Unity games.
 
 ---
 
@@ -30,7 +30,7 @@ Offset Tester supports both **ARM32 (ARMv7)** and **ARM64 (ARMv8)** architecture
 | **Stack Trace** | View the call stack to understand how a function is being executed |
 | **Runtime Dumper** | Dumps only actively used offsets for faster and cleaner results compared to full dumps |
 | **Global/Unity Dumper** | Dumps Unity or non-Unity game libraries for analysis |
-| **ARM32 & ARM64 Support** | Fully compatible with both 32-bit and 64-bit architectures |
+| **ARM32, ARM64, x86 & x86_64 Support** | Fully compatible with arm32, arm64, x86 & x86_64 architectures |
 
 ---
 
@@ -80,13 +80,14 @@ Open the `packages.txt` file and enter the package name of the game you want to 
 
 **Single game:**
 ```
-com.fingersoft.hillclimb
+com.fingersoft.hillclimb-5
 ```
 
 **Multiple games** (separate each with a comma, no spaces):
 ```
-com.fingersoft.hillclimb,com.innersloth.spacemafia
+com.fingersoft.hillclimb,com.innersloth.spacemafia-10
 ```
+Use -value to set a startup delay in seconds (e.g. com.game.example-10).
 
 Save the file.
 
