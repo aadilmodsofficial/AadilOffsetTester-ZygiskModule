@@ -1,7 +1,7 @@
 id=AadilOffsetTester
 name=Aadil Offset Tester
-version=v9.5
-versionCode=95
+version=v9.6
+versionCode=960
 author=Aadil
 description=Advanced Offset Tester by Aadil Mods
 minMagisk=24000

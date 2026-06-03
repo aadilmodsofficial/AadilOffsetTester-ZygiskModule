@@ -1,1 +1,1 @@
-com.aadil.test,com.game.packagename
+com.aadil.test-10,com.game.packagename
